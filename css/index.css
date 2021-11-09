@@ -1,0 +1,72 @@
+#logo {
+  display: none;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 64vh;
+  font-family: ltc-globe-gothic,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13vw;
+  margin: 12vh;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6), -5px -5px 10px rgba(0, 0, 0, 0.6);
+  animation: colorLogo 4s infinite linear;
+}
+
+#middle div {
+  position: relative;
+  top: 30px;
+}
+
+.split {
+  display: none;
+  animation: colorLogo 4s infinite linear;
+}
+
+@keyframes colorLogo {
+  0% {color: rgba(255, 72, 0, 0.8);}
+  10% {color: rgba(255, 84, 0, 0.8);}
+  20% {color: rgba(255, 96, 0, 0.8);}
+  30% {color: rgba(255, 109, 0, 0.8);}
+  40% {color: rgba(255, 121, 0, 0.8);}
+  50% {color: rgba(255, 133, 0, 0.8);}
+  60% {color: rgba(255, 121, 0, 0.8);}
+  70% {color: rgba(255, 109, 0, 0.8);}
+  80% {color: rgba(255, 96, 0, 0.8);}
+  90% {color: rgba(255, 84, 0, 0.8);}
+  100% {color: rgba(255, 72, 0, 0.8);}
+}
+
+/* == TABLET == */
+@media only screen and (max-width: 1024px) {
+  #middle {
+    height: 70vh;
+    margin: 10vh;
+  }
+  #middle div {
+    top: 20px;
+  }
+}
+
+/* == MOBILE == */
+@media only screen and (max-width: 768px) {
+  #middle {
+    height: 76vh;
+    margin: 8vh;
+    font-size: 20vw;
+    transition: all 0.5s;
+  }
+  #middle div {
+    top: 10px;
+    margin-top: 3vh;
+  }
+  #middle div:last-child {
+    display: none;
+  }
+  .split {
+    display: block;
+  }
+}

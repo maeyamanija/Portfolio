@@ -1,0 +1,140 @@
+#middle {
+  background-color: black;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  height: 80%;
+  width: 80%;
+}
+
+.swiper-wrapper {
+  height: 50vh;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-slide img {
+  height: 50vh;
+  cursor: pointer;
+}
+
+.work-title {
+  margin-top: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.work-title:hover {
+  letter-spacing: 3px;
+  transition: ease-out 0.5s;
+}
+
+.swiper-button-prev:hover {
+  transform: translateX(-8px);
+  transition: ease-out 0.5s;
+}
+
+.swiper-button-next:hover {
+  transform: translateX(8px);
+  transition: ease-out 0.5s;
+}
+
+/* == TABLET == */
+@media only screen and (max-width: 1024px) {
+  #middle {
+    height: 90vh;
+  }
+
+  .work-title {
+    font-size: 0.9em;
+    margin-top: 35px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 10px;
+    height: 10px;
+  }
+
+  :root {
+    --swiper-navigation-size: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 12px;
+    width: 12px;
+  }
+
+  .swiper-pagination {
+    top: -90%;
+  }
+
+  .swiper-slide img {
+    width: 60vw;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+/* == MOBILE == */
+@media only screen and (max-width: 768px) {
+  #middle {
+    height: 92vh;
+    transition: all .5s;
+  }
+
+  .work-title {
+    font-size: 0.8em;
+    margin-top: 30px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 10px;
+    height: 10px;
+    top: 5%;
+  }
+
+  :root {
+    --swiper-navigation-size: 22px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 8px;
+    width: 8px;
+  }
+
+  .swiper-pagination {
+    top: -90%;
+  }
+
+  .swiper-slide img {
+    height: auto;
+    width: calc(100vw - 66px);
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: calc(100vw - 66px);
+  }
+}

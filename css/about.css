@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/background-about.jpg);
+}
+
+#middle {
+  display: flex;
+  margin: 9vh 230px;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img.pic-mae {
+  max-height: 70vh;
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.written-content {
+  height: 70vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  justify-content: space-around;
+  min-width: 27vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+p {
+  line-height: 2.5em;
+}
+
+/* == TABLET == */
+@media only screen and (max-width: 1024px) {
+  #middle {
+    flex-direction: column;
+    height: 90vh;
+    padding: 0px;
+    margin: 0 200px;
+  }
+
+  img.pic-mae {
+    order: 2;
+    padding: 0 50px 50px 50px;
+    width: calc(100vw - 400px);
+    max-height: 50vh;
+    object-fit: cover;
+  }
+
+  .written-content {
+    justify-content: space-between;
+    min-height: 25vh;
+    max-height: 30vh;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    position: relative;
+    top: -15px;
+  }
+
+  p {
+    line-height: 2em;
+    font-size: 0.8em;
+  }
+
+  .written-content .envelope {
+    height: 11px;
+  }
+
+  .written-content .email {
+    margin-top: 1.7vh;
+    font-size: 0.9em;
+  }
+
+}
+
+/* == MOBILE == */
+@media only screen and (max-width: 768px) {
+  #middle {
+    height: calc(100vh - 8vh - 70px);
+    margin: 35px;
+    transition: all 0.5s;
+  }
+
+  .written-content {
+    padding: 35px;
+    height: auto;
+  }
+
+  img.pic-mae {
+    padding: 0 35px 35px 35px;
+    width: calc(100vw - 70px);
+  }
+
+  h1 {
+    font-size: 1em;
+    margin-bottom: 0px;
+    top: -10px;
+  }
+
+  p {
+    margin-bottom: 0px;
+    font-size: 0.7em;
+    line-height: 1.8em;
+  }
+
+  .written-content .envelope {
+    height: 10px;
+  }
+  .written-content .email {
+    font-size: 0.85em;
+  }
+}

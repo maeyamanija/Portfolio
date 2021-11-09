@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/myswiper.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bcv4rgb.css">
+  <link rel="icon" href="images/tab-icon.svg">
+  <title>Mae Yamanija | Projects</title>
+</head>
+
+<body>
+  <div class="top-section">
+    <div class="logo-burger">
+      <a href="index.html"><img id="logo" src="images/logo.svg"></a>
+      <div id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="mobile-navigation" id="myNav">
+      <div id="closebtn">
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="nav-items">
+        <a href="projects.html">PROJECTS</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="https://drive.google.com/file/d/1Wzke1c-B9dkHPhBHr8gud7nCcxBJyZPb/view?usp=sharing" target="_blank">RESUME</a>
+      </nav>
+      <div class="nav-footer">
+        <div class="email">
+          <img class="envelope" src="images/envelope.svg">
+          <a class="email" href="mailto:maeyamanija@gmail.com">maeyamanija@gmail.com</a>
+        </div>
+        <div class="credits">
+          Background images by <a href="https://unsplash.com/@pawel_czerwinski" target="_blank">Pawel Czerwinski</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="middle">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="runway-concept.html"><img src="images/swiper-items/1.jpg" alt="Runway Concept"></a>
+          <a class="work-title" href="runway-concept.html">RUNWAY CONCEPT</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="rethinking-plastic.html"><img src="images/swiper-items/2.jpg" alt="Rethinking Plastic"></a>
+          <a class="work-title" href="rethinking-plastic.html">RETHINKING PLASTIC</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="desertification-top.html"><img src="images/swiper-items/3.jpg" alt="Desertification Top"></a>
+          <a class="work-title" href="desertification-top.html">DESERTIFICATION TOP</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="wearing-my-acne.html"><img src="images/swiper-items/4.jpg" alt="Wearing My Acne"></a>
+          <a class="work-title" href="wearing-my-acne.html">WEARING MY ACNE</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="climate-change-collection.html"><img src="images/swiper-items/5.jpg" alt="Climate Change Collection"></a>
+          <a class="work-title" href="climate-change-collection.html">CLIMATE CHANGE COLLECTION</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="untitled.html"><img src="images/swiper-items/6.jpg" alt="Untitled"></a>
+          <a class="work-title" href="untitled.html">UNTITLED</a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="email">
+      <img class="envelope" src="images/envelope.svg">
+      <a class="email" href="mailto:maeyamanija@gmail.com">maeyamanija@gmail.com</a>
+    </div>
+    <div class="credits">
+      Background image by <a href="https://unsplash.com/@pawel_czerwinski" target="_blank">Pawel Czerwinski</a>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
